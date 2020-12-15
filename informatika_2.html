@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="index.html" class="button">Тесты</a>
+          <a href="index.html" class="button">Задачи</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Тест по информатике для учеников 8-го класса <br />
+        "Информация в природе, обществе и технике"
+      </h1>
+      <p>В конце вы узнаете количество правильных ответов.</p>
+    </div>
+    <div class="content">
+      <form>
+        <div class="question">
+          <p class="title">
+            1. В неживой природе понятие "информация" связывают:
+          </p>
+          <label>
+            <input type="radio" name="first" value="0" />
+            а) со сведениями об окружающем мире и протекающих в нем процессах,
+            воспринимаемых человеком или специальными устройствами</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            б) с сообщениями, передаваемыми в форме знаков или сигналов</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            в) с сообщениями, снимающими или уменьшающими существующую до их
+            получения неопределенность
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="first" value="1" />
+            г) с понятием отражения, отображения мира
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            2. К какой форме представления информации относится прогноз погоды,
+            передаваемый по радио?
+          </p>
+          <label>
+            <input type="radio" name="second" value="1" />
+            а) текстовой</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            б) числовой</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            в) графической
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            г) мультимедийной
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            3. Выберите верную пару "рецептор-вид информации":
+          </p>
+          <label>
+            <input type="radio" name="three" value="0" />
+            а) глаза - тактильная</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            б) язык - запах</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            в) уши - зрительная
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="three" value="1" />
+            г) нос - обонятельная
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            4. Информацию, отражающую истинное положение дел, называют:
+          </p>
+          <label>
+            <input type="radio" name="four" value="0" />
+            а) понятной</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="1" />
+            б) достоверной</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            в) объективной
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            г) полной
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            5. Как называют информацию, верную в изменившихся условиях?
+          </p>
+          <label>
+            <input type="radio" name="five" value="0" />
+            а) переменная</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="five" value="0" />
+            б) истинная</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="five" value="0" />
+            в) достоверная
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="five" value="1" />
+            г) актуальная
+          </label>
+        </div>
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Итого баллов:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        myform.result.value =
+          +myform.first.value +
+          +myform.second.value +
+          +myform.three.value +
+          +myform.four.value +
+          +myform.five.value +
+          "/5";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="index.html" class="button">Тесты</a>
+          <a href="index.html" class="button">Задачи</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Задача по информатике для учеников 8-го класса <br />
+        Задача №1
+      </h1>
+      <p>В конце вы узнаете количество правильных ответов.</p>
+    </div>
+    <div class="content">
+      <form>
+        <div class="question">
+          <br />
+          <p class="title">
+            Ученики 8 класса Андрей, Егор, Ксюша и Игорь занимались
+            факультативными занятиями по информатике, биологии, английскому
+            языку и математике. Известно, что каждый ученик занимался только
+            одним факультативом, и никакой факультатив не посещали два ученика.
+            Ксюша и Игорь никогда не посещали факультатив информатики. Андрей
+            вместе с учеником, посещавшим факультатив математики, ходили в гости
+            к любителю английского языка. Ксюша никогда не посещала
+            факультативных занятий по английскому языку, а Андрей на последнем
+            факультативе изучал строение кольчатого червя. Кто из ребят
+            занимался английским языком?
+          </p>
+          <label
+            >Впишите ответ:
+            <input type="text" name="five" />
+          </label>
+        </div>
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Итого баллов:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        if (myform.five.value == "Игорь") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+    </script>
+  </body>
+</html>

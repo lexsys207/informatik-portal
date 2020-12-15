@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="index.html" class="button">Тесты</a>
+          <a href="index.html" class="button">Задачи</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Тест по информатике для учеников 8-го класса <br />
+        "Компьютер как универсальное устройство для обработки информации."
+      </h1>
+      <p>В конце вы узнаете количество правильных ответов.</p>
+    </div>
+    <div class="content">
+      <form>
+        <div class="question">
+          <p class="title">
+            1. Как называют информацию, отражающую все возможные стороны дела?
+          </p>
+          <label>
+            <input type="radio" name="first" value="0" />
+            а) понятной</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            б) объективной</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            в) достоверной
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="first" value="1" />
+            г) полной
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            2. СУБД - это программы:
+          </p>
+          <label>
+            <input type="radio" name="second" value="1" />
+            а) позволяющие управлять большими информационными массивами - базами
+            данных</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            б) позволяющие осуществлять черчение и конструирование различных
+            механизмов с помощью компьютера</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            в) позволяющие сочетать в себе возможности системы управления базами
+            данных, табличного процессора, системы деловой графики, а иногда и
+            другие возможности
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            г) позволяющие наглядно представлять на экране различные данные и
+            зависимости
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            3. С помощью каких программ выполняется большинство операций по
+            обслуживанию файловой структуры?
+          </p>
+          <label>
+            <input type="radio" name="three" value="0" />
+            а) архиваторов</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="1" />
+            б) файловых менеджеров</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            в) антивирусных программ
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            г) утилит
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            4. К внешней (долговременной) памяти компьютера можно отнести:
+          </p>
+          <label>
+            <input type="radio" name="four" value="0" />
+            а) кэш-память, оперативную память</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            б) печатное руководство пользователя ПК</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="1" />
+            в) CD-ROM диски, гибкие диски, винчестер
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            г) DVD-диски, процессор
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            5. Об оперативной памяти компьютера можно сказать, что она:
+          </p>
+          <label>
+            <input type="radio" name="five" value="0" />
+            а) сохраняется при выключении компьютера</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="five" value="1" />
+            б) очищается при выключении компьютера</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="five" value="0" />
+            в) используется для ускорения работы компьютера
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="five" value="0" />
+            г) служит для запоминания файлов после их изменения
+          </label>
+        </div>
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Итого баллов:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        myform.result.value =
+          +myform.first.value +
+          +myform.second.value +
+          +myform.three.value +
+          +myform.four.value +
+          +myform.five.value +
+          "/5";
+      };
+    </script>
+  </body>
+</html>

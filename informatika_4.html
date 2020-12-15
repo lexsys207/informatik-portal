@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="index.html" class="button">Тесты</a>
+          <a href="index.html" class="button">Задачи</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Задача по информатике для учеников 8-го класса <br />
+        Задача №2
+      </h1>
+      <p>В конце вы узнаете количество правильных ответов.</p>
+    </div>
+    <div class="content">
+      <form>
+        <div class="question">
+          <br />
+          <p class="title">
+            Определите информационный объем документа в килобайтах, если
+            известно, что в нем 32 страницы. На каждой странице по 64 строки и
+            каждая строка содержит 56 символ, при этом 1 символ кодируется
+            восьмибитовым способом. Ответ записать в виде целого числа.?
+          </p>
+          <label
+            >Впишите ответ:
+            <input type="number" name="five" />
+          </label>
+        </div>
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Итого баллов:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        if (myform.five.value == 112) {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  /* background: #999; */
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 115, 236, 0.2);
+}
+
+header menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 150px;
+}
+
+header menu .logo a {
+  display: flex;
+  align-items: center;
+}
+
+header menu .logo h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-left: 20px;
+  color: #000;
+}
+
+.link-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link-content .button {
+  padding: 10px 20px;
+  background: #0073ec;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  height: 15px;
+  margin-left: 20px;
+}
+
+.intro {
+  height: 300px;
+  width: 100%;
+  background: #0073ec;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 150px;
+  align-items: center;
+}
+
+.intro h1 {
+  color: #fff;
+  font-size: 48px;
+}
+
+.intro p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.intro .img img {
+  width: 200px;
+  margin-left: 50px;
+}
+
+.content {
+  padding: 10px 0px;
+}
+
+.content-block {
+  background: #fff;
+  padding: 50px 200px;
+}
+
+.content-block h1 {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+}
+
+.content-block .card-item {
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 115, 236, 0.2);
+  background: #fff;
+}
+
+.content-block .card-item .text {
+  width: 500px;
+}
+
+.content-block .card-item .text h3 {
+  color: #000;
+  font-size: 28px;
+}
+
+.content-block .card-item .text p {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.content-block .card-item .text .button {
+  padding: 10px 20px;
+  background: #0073ec;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.content-block .card-item .img img {
+  width: 400px;
+}
+
+/* Стили для страницы тестов */
+.question {
+  padding: 20px 0px;
+}
+
+.question .title {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.question label {
+  font-size: 18px;
+  line-height: 38px;
+  padding-left: 20px;
+}
+
+form {
+  padding: 50px 150px;
+}
+
+form .button {
+  padding: 10px 20px;
+  background: #0073ec;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+
+form .result {
+  margin-bottom: 20px;
+}
+
+form .result span {
+  color: #000;
+  font-size: 24px;
+}
+
+form .result input {
+  color: #0073ec;
+  font-size: 24px;
+  border: none;
+}
+
+.intro-test {
+  height: 200px;
+  width: 100%;
+  background: #0073ec;
+  padding: 10px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-test h1 {
+  color: #fff;
+}
+
+.intro-test p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+}
+
+/* Задачи главная */
+.content-block:last-child {
+  background: rgba(0, 0, 0, 0.1);
+}
