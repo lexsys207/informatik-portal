@@ -227,3 +227,13 @@ form .result input {
   font-size: 16px;
   line-height: 1.2;
 }
+
+.title-name {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.descreption {
+  font-size: 24px;
+}
