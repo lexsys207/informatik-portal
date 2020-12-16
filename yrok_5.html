@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="index.html" class="button">Уроки</a>
+          <a href="about.html" class="button">О нас</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Урок по теме: <br />
+        "Информационные (нематериальные) модели. <br />Компьютерное
+        моделирование"
+      </h1>
+      <p>Советуем начать с теории</p>
+    </div>
+    <div class="content">
+      <div class="content-block link-card-block">
+        <div class="link-card-item">
+          <a href="text_5.html">
+            <img src="" alt="" />
+            <h3>Текст</h3>
+          </a>
+        </div>
+        <div class="link-card-item">
+          <a href="video_5.html">
+            <img src="" alt="" />
+            <h3>Видео</h3>
+          </a>
+        </div>
+        <div class="link-card-item">
+          <a href="test_5.html">
+            <img src="" alt="" />
+            <h3>Тест</h3>
+          </a>
+        </div>
+        <div class="link-card-item">
+          <a href="zadaca_5.html">
+            <img src="" alt="" />
+            <h3>Задача</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        if (myform.five.value == "Игорь") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+    </script>
+  </body>
+</html>

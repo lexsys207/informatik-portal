@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="#test" class="button">Уроки</a>
+          <a href="about.html" class="button">О нас</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Тест по информатике для учеников 8-го класса <br />
+        "Защита информации.<br />
+        Информатизация и информационно-технологическая культура"
+      </h1>
+      <p>В конце вы узнаете количество правильных ответов.</p>
+    </div>
+    <div class="content">
+      <form>
+        <div class="question">
+          <p class="title">
+            1. Информационная безопасноть – это:
+          </p>
+          <label>
+            <input type="radio" name="first" value="0" />
+            а) Деятельность, направленная на разработку различных
+            программ</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            б) Любой вид деятельности, направленный на повышение
+            производительности компьютерных систем</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="1" />
+            в) Деятельность, направленнная на обеспечение защищённого состояния
+            обьекта
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            г) ВОбеспечение создания открытого доступа к любому виду информации
+            для любого пользователя
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            2. Какие из перечисленных устройств можно использовать для хранения
+            и защиты информации:
+          </p>
+          <label>
+            <input type="radio" name="second" value="0" />
+            а) Антивирусные программы</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="second" value="1" />
+            б) Магнитные карты
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            в) Ученическая тетрадь
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            г) Звук
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            3. Под термином «защита информации» принято понимать:
+          </p>
+          <label>
+            <input type="radio" name="three" value="0" />
+            а) Обеспечение физической целостности информации</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="1" />
+            б) Технические и организационные меры по предотвращению
+            неправомерного доступа к ней или ее искажения</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            в) Процессы, направленные на построение и развитие
+            телекоммуникационной инфраструктуры, объединяющей территориально
+            распределенные информационные ресурсы
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            г) Модели поведения человека в определенных ситуациях
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            4. Что такое криптография?
+          </p>
+          <label>
+            <input type="radio" name="four" value="0" />
+            а) Указанное в пунктах «Б» и «В»</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            б) Один из видов представления графики в компьютерном виде</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="1" />
+            в) Отрасль знаний, целью которой является изучение и создание
+            криптографических преобразований и алгоритмов
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            г) Написание программного кода с использованием сценариев (скриптов)
+          </label>
+        </div>
+
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Итого баллов:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        myform.result.value =
+          +myform.first.value +
+          +myform.second.value +
+          +myform.three.value +
+          +myform.four.value +
+          +myform.five.value +
+          "/5";
+      };
+    </script>
+  </body>
+</html>

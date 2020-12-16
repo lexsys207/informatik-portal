@@ -197,7 +197,33 @@ form .result input {
   font-size: 24px;
 }
 
-/* Задачи главная */
-.content-block:last-child {
-  background: rgba(0, 0, 0, 0.1);
+/* Страница уроки */
+.link-card-block {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.link-card-block .link-card-item {
+  background: #0073ec;
+  padding: 20px;
+  margin: 20px;
+}
+
+.link-card-block .link-card-item a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-card-block .link-card-item a h3 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.text-page p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.2;
 }

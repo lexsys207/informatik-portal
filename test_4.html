@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="index.html" class="button">Уроки</a>
+          <a href="about.html" class="button">О нас</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Тест по информатике для учеников 8-го класса <br />
+        "Модели, их назначение, свойства и виды"
+      </h1>
+      <p>В конце вы узнаете количество правильных ответов.</p>
+    </div>
+    <div class="content">
+      <form>
+        <div class="question">
+          <p class="title">
+            1. Какими из предложенных способностей должен обладать манекен для
+            его использования в качестве модели человека:
+          </p>
+          <label>
+            <input type="radio" name="first" value="0" />
+            а) Должен быть сделан из прочного материала</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            б) Умением передвигаться</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            в) Способностью мыслить
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="first" value="1" />
+            г) Должен иметь внешнее сходство с человеком (форма, размер)
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            2. Какие из приведенных ниже определений понятия «модель» верные?
+          </p>
+          <label>
+            <input type="radio" name="second" value="1" />
+            а) Модель – это некоторое упрощенное подобие реального
+            объекта</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            б) Модель должна обладать всеми свойствами исследуемого объекта
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            в) Модель – это различные устройства для ввода-вывода информации
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            г) Модель – это система обработки информации, работающая совместно с
+            организационными ресурсами
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            3. Закончить фразу: «Если материальная модель объекта – это его
+            физическое подобие, то информационная модель объекта – это его …»
+            одним из предложенных вариантов:
+          </p>
+          <label>
+            <input type="radio" name="three" value="1" />
+            а) Описание</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            б) Имитация</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            в) Схематическое представление
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            г) Миниатюра
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            4. Какое из утверждений верно:
+          </p>
+          <label>
+            <input type="radio" name="four" value="0" />
+            а) Информационные модели одного и того же объекта, предназначенные
+            для одной и той же цели, даже если построены разными людьми, должны
+            быть во всем сходны</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            б) Информационные модели одного и того же объекта, пусть даже
+            предназначенные для разных целей, должны быть во многом
+            сходны</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            в) Информационные модели представляют объекты в их физическом
+            подобии
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="four" value="1" />
+            г) Информационные модели одного и того же объекта, предназначенные
+            для разных целей, могут быть совершенно разными
+          </label>
+        </div>
+
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Итого баллов:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        myform.result.value =
+          +myform.first.value +
+          +myform.second.value +
+          +myform.three.value +
+          +myform.four.value +
+          +myform.five.value +
+          "/5";
+      };
+    </script>
+  </body>
+</html>

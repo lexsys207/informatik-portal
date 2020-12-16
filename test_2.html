@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="#test" class="button">Уроки</a>
+          <a href="about.html" class="button">О нас</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro-test">
+      <h1>
+        Тест по информатике для учеников 8-го класса <br />
+        "Операции над двоичными числами. Измерение информации. <br />Системы
+        кодирования информации"
+      </h1>
+      <p>В конце вы узнаете количество правильных ответов.</p>
+    </div>
+    <div class="content">
+      <form>
+        <div class="question">
+          <p class="title">
+            1. Формула I = log2K позволяет вычислить...
+          </p>
+          <label>
+            <input type="radio" name="first" value="0" />
+            а) Количество равновероятных событий</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            б) Мощность алфавита</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="first" value="1" />
+            в) Количество бит в сообщении
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="first" value="0" />
+            г) Вероятность события
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            2. Как называется способ представления информации, при котором
+            физическая величина изменяется непрерывно?
+          </p>
+          <label>
+            <input type="radio" name="second" value="1" />
+            а) Аналоговый</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            б) Дискретный
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            в) Цифровой
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="second" value="0" />
+            г) Звуковой
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            3. Чтобы получить дополнительный код числа, нужно...
+          </p>
+          <label>
+            <input type="radio" name="three" value="0" />
+            а) Перевести код в десятичное число</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="1" />
+            б) Прибавить единицу к обратному коду</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            в) Отнять единицу от обратного кода
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="three" value="0" />
+            г) Заменить единицу нулем
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            4. Сколько бит используется для кодирования одного символа в
+            кодировке ASCII?
+          </p>
+          <label>
+            <input type="radio" name="four" value="0" />
+            а) 32</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            б) 1</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="four" value="0" />
+            в) 16
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="four" value="1" />
+            г) 8
+          </label>
+        </div>
+        <div class="question">
+          <br />
+          <p class="title">
+            5. Сколько килобайт в одном мегабайте?
+          </p>
+          <label>
+            <input type="radio" name="five" value="1" />
+            а) 1024</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="five" value="0" />
+            б) 8</label
+          >
+          <br />
+          <label>
+            <input type="radio" name="five" value="0" />
+            в) 32
+          </label>
+          <br />
+          <label>
+            <input type="radio" name="five" value="0" />
+            г) 16
+          </label>
+        </div>
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Итого баллов:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        myform.result.value =
+          +myform.first.value +
+          +myform.second.value +
+          +myform.three.value +
+          +myform.four.value +
+          +myform.five.value +
+          "/5";
+      };
+    </script>
+  </body>
+</html>
