@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #555;
@@ -11,6 +15,38 @@ body {
 
 a {
   text-decoration: none;
+}
+
+table {
+  border-spacing: 0 10px;
+  font-weight: bold;
+}
+
+th {
+  padding: 10px 20px;
+  background: #0073ec;
+  color: #fff;
+  border-right: 2px solid;
+  font-size: 0.9em;
+}
+th:first-child {
+  text-align: left;
+  border-left: 2px solid #0073ec;
+}
+th:last-child {
+  border-right: none;
+}
+td {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid #0073ec;
+  border-bottom: 2px solid #0073ec;
+  border-right: 2px solid #0073ec;
+}
+td:first-child {
+  border-left: 2px solid #0073ec;
 }
 
 header {

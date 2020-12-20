@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Сайт - тесты для школьников</title>
+  </head>
+  <body>
+    <header>
+      <menu>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="логотип" />
+            <h3>Тесты для школьников</h3>
+          </a>
+        </div>
+        <div class="link-content">
+          <a href="index.html" class="button">Уроки</a
+          ><a href="zanim-zadaci.html" class="button">Занимательные задачи</a>
+          <a href="about.html" class="button">Обо мне</a>
+        </div>
+      </menu>
+    </header>
+    <div class="intro">
+        <div class="text">
+                <h1>
+                        Занимательные задачи
+                      </h1>
+                      <p>Должно появится слово "Верно"</p>
+        </div>
+      
+    </div>
+    <div class="content">
+      <!-- Первая задача -->
+      <form>
+        <div class="question">
+            <h2>Задача 1</h2>
+          <br />
+          <div>
+            <img src="images/zadaci1.png" alt="" width="300" />
+          </div>
+          <p class="">
+            Два бобра живут в домиках, отделенных большим лесов. Они решают
+            посылать сообщения друг другу, запуская фейерверки. Каждое сообщение
+            – последовательность слов, которых в бобровом языке только пять.
+            Бобры используют два типа фейерверков, запуская их друг за другом по
+            приведенному в рисунке 7 коду.
+          </p>
+          <p>
+            Например, чтобы послать сообщение «еда, бревно, еда» бобер должен
+            запустить такие фейерверки (см. рис. 8):
+          </p>
+          <div>
+            <img src="images/zadaci2.png" alt="" width="300" />
+          </div>
+          <p class="">
+            Сколько различных значений имеет следующая последовательность
+            фейерверков (см. рис. 9)?<br />
+            <img src="images/zadaci3.png" alt="" width="300" /><br />
+            <b>Варианты ответов:</b><br />
+            А) 3 Б) 1 В) 4 Г) 2
+          </p>
+          <label
+            >Впишите ответ:
+            <input type="text" name="five" />
+          </label>
+        </div>
+        <br />
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Результат:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+
+      <!-- Вторая задача -->
+      <form action="">
+        <div class="question">
+            <h2>Задача 2</h2>
+          <p>
+            Укажите минимальный объем памяти (в килобайтах),
+            достаточный для хранения растрового изображения размером 64 х 64
+            пикселей, если известно, что в изображении используется палитра из
+            256 цветов. Саму палитру хранить не нужно.
+          </p>
+          <label
+            >Впишите ответ:
+            <input type="number" name="zadaca" />
+          </label>
+        </div>
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Результат:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc4" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+
+      <!-- третья задача -->
+      <form action="">
+        <div class="question">
+                <h2>Задача 3</h2>
+          <p>
+            Бобробитовый формат.<br />
+            Страна, представившая задачу на конкурс: Россия. Год: 2013.<br />
+            Возрастная категория конкурсантов: V–VI классов.<br />
+            Бобёр Харко придумал способ кодировки черно–белых изображений.
+            Каждое изображение он кодирует перечислением цветов: сначала слева
+            направо, затем сверху до вниз. Например, изображение на рисунке 10
+            он кодирует как WWWWBBBWW.
+          </p>
+          <div>
+            <img src="images/zadaci4.png" alt="" width="300" />
+          </div>
+          <p>
+            Затем Харко решил улучшить метод, и если буква повторится несколько
+            раз подряд, он пишет ее только один раз, сопровождая числом
+            повторений. Он назвал этот формат BVR. В этом формате приведенное
+            изображение кодируется всего 6 символами: W4B3W2.
+          </p>
+          <p>
+            Какая из следующих картинок будет иметь самый короткий код в формате
+            BVR?<br />
+            <b>Варианты ответа представлены на рисунке 11.</b>
+          </p>
+          <div>
+            <img src="images/zadaci5.png" alt="" width="300" />
+          </div>
+          <label
+            >Впишите ответ:
+            <input type="text" name="zadaca" />
+          </label>
+        </div>
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+          <span class="title">Результат:</span>
+          <input class="" type="text" name="result" readonly />
+        </div>
+        <input class="button" type="button" id="calc5" value="Завершить" />
+        <input class="button" type="reset" value="Сброс" />
+      </form>
+
+      <!-- Четвёртая задача -->
+      <form action="">
+        <div class="question">
+                <h2>Задача 4</h2>
+          <p>
+            Что у нас на обед?
+          </p>
+          <p>
+            Бибо и Биба любят обмениваться зашифрованными письмами, используя
+            шифровальный диск (см. рис. 12), состоящий из внешнего и внутреннего
+            дисков.
+          </p>
+          <p>
+            Каждый день Бибо посылает Бибе сообщение о том, что он хотел бы
+            съесть на обед. Это происходит следующим образом:
+          </p>
+          <p>
+            Бибо пишет название блюда, например, ПИЦЦА.
+          </p>
+          <p>
+            Под каждой буквой он пишет число от 1 до 9 и поворачивает внутренний
+            диск влево относительно стартового положения на указанное количество
+            делений. (На картинке вы можете увидеть внутренний диск, повёрнутый
+            на три деления).
+          </p>
+          <p>
+            Бибо выписывает соответствующую букву с внутреннего диска. Например,
+            букве П на данной картинке соответствует буква Т на внутреннем
+            диске.
+          </p>
+          <p>
+            Проделав эти операции для каждой буквы, Бибо посылает Бибе
+            зашифрованное сообщение, а Биба его расшифровывает.
+          </p>
+          <div>
+            <img src="images/zadaci6.png" alt="" width="300" />
+          </div>
+          <p>
+            Например, Бибо захотел на обед пиццу. Он пишет (см. табл.1):
+          </p>
+          <div>
+              <p>Таблица 1</p>
+            <table>
+              <tr>
+                <th>Сообщение</td>
+                <th>П</th>
+                <th>И</th>
+                <th>Ц</th>
+                <th>Ц</th>
+                <th>А</th>
+              </tr>
+              <tr>
+                  <td>Поворот</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                    <td>Зашифрованное сообщение</td>
+                    <td>Т</td>
+                    <td>и</td>
+                    <td>Ъ</td>
+                    <td>Щ</td>
+                    <td>Г</td>
+                </tr>
+            </table>
+          </div>
+          <div>
+              <p>Что Бибо предлагает взять на обед, если он написал такое сообщение:</p>
+                <p>Таблица 2</p>
+              <table>
+                <tr>
+                  <th>Сообщение</td>
+                  <th>?</th>
+                  <th>?</th>
+                  <th>?</th>
+                  <th>?</th>
+                  <th>?</th>
+                  <th>?</th>
+                  <th>?</th>
+                </tr>
+                <tr>
+                    <td>Поворот</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                      <td>Зашифрованное сообщение</td>
+                      <td>О</td>
+                      <td>Е</td>
+                      <td>И</td>
+                      <td>З</td>
+                      <td>П</td>
+                      <td>А</td>
+                      <td>З</td>
+                  </tr>
+              </table>
+            </div>
+            <label
+            >Впишите ответ:
+            <input type="text" name="zadaca" />
+          </label>
+        </div>
+        <!--ПОДСЧЁТ РЕЗУЛЬТАТОВ-->
+        <div class="result">
+                <span class="title">Результат:</span>
+                <input class="" type="text" name="result" readonly />
+              </div>
+              <input class="button" type="button" id="calc6" value="Завершить" />
+              <input class="button" type="reset" value="Сброс" />
+      </form>
+      <!-- Пятая задача -->
+      <form action="">
+          <div class="question">
+                <h2>Задача 5</h2>
+            <p>
+                    Язык тела.<br>
+                    Герои задачи: В данной задаче главным героем представлен пингвиненок Мамбл из мультфильма «Делай ноги». Императорские пингвины ищут себе пару с помощью песни. Голосовые связки Мамбла не давали ему нормально спеть, но зато он прекрасно танцевал. И мы уже немного пофантазировали, что в движениях Мамбла действительно скрывались слова.
+                    
+            </p>
+            <p>
+                    Пингвиненок Мамбл любит общаться с окружающими с помощью танцев. В каждой связке движений скрыта определенная буква. Например:
+            </p>
+            <div>
+                <img src="images/zadaci7.png" alt="" width="300">
+            </div>
+            <p><b>Сколько букв содержит сообщение–танец Мамбла:</b></p>
+            <div>
+                <img src="images/zadaci8.png" alt="" width="500">
+            </div>
+            <label
+            >Впишите ответ:
+            <input type="number" name="zadaca" />
+          </label>
+          </div>
+          <div class="result">
+                <span class="title">Результат:</span>
+                <input class="" type="text" name="result" readonly />
+            </div>
+              <input class="button" type="button" id="calc7" value="Завершить" />
+              <input class="button" type="reset" value="Сброс" />
+      </form>
+      <!-- Шестая задача -->
+      <form action="">
+        <div class="question">
+                <h2>Задача 6</h2>
+            <p>
+                    Послание для города<br>
+                    Герои задачи: Мистер Фредриксен – главный герой мультика «Вверх». По сюжету он с помощью бесчисленного количества воздушных шариков поднял свой дом в небо. Когда у меня появилась идея задачи про связки шаров, я сразу подумала про этого персонажа. Правда в задаче он уже владеет собственным магазином воздушных шаров после увлекательного приключения.<br>
+                    Мистер Фредриксен владеет магазином воздушных шаров. Каждый вечер перед закрытием магазина милый старичок отправляет шарики в небо. Шары меняются, в зависимости от того, что хочет сообщить городу продавец.
+            </p>
+            <div>
+                <img src="images/zadaci9.png" alt="" width="300">
+            </div>
+            <p>
+                 <b>   Что сегодня хотел сказать мистер Фредриксен своему городу?</b>
+            </p>
+            <div>
+                <img src="images/zadaci10.png" alt="" width="300">
+            </div>
+            <label
+            >Впишите ответ:
+            <input type="text" name="zadaca" />
+          </label>
+        </div>
+        <div class="result">
+                <span class="title">Результат:</span>
+                <input class="" type="text" name="result" readonly />
+            </div>
+              <input class="button" type="button" id="calc8" value="Завершить" />
+              <input class="button" type="reset" value="Сброс" />
+      </form>
+      <!-- Седьмая задача -->
+      <form action="">
+          <div class="question">
+                <h2>Задача 7</h2>
+            <p>
+                    Почувствуй себя княгиней.<br>
+                    Герои задачи: В задаче небольшая отсылка к княгине Ольге.
+            </p>
+            <p>
+                    Оля решила представить себя древнерусской княгиней. Мама, зная новое увлечение своей дочери, решила оставить записку, зашифрованную с помощью древнерусского шифра, Тарабарской грамоты:<br>
+                    Увса па мащоку, ощец ш жосоцисьпите.<br>
+Маленькая княгиня с легкостью разгадала послание мамы, ведь она знала, что согласные буквы меняются вертикально с помощью таблицы, а гласные остаются без изменения.
+
+            </p>
+            <div>
+                <table>
+                    <tr>
+                        <td>б</td>
+                        <td>в</td>
+                        <td>г</td>
+                        <td>д</td>
+                        <td>ж</td>
+                        <td>з</td>
+                        <td>к</td>
+                        <td>л</td>
+                        <td>м</td>
+                        <td>н</td>
+                    </tr>
+                    <tr>
+                        <td>щ</td>
+                        <td>ш</td>
+                        <td>ч</td>
+                        <td>ц</td>
+                        <td>х</td>
+                        <td>ф</td>
+                        <td>т</td>
+                        <td>с</td>
+                        <td>р</td>
+                        <td>п</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                <b>Что же все–таки мама написала в записке своей дочери?</b>
+            </p>
+            <label
+            >Впишите ответ:
+            <input type="text" name="zadaca" />
+          </label>
+          </div>
+          <div class="result">
+                <span class="title">Результат:</span>
+                <input class="" type="text" name="result" readonly />
+            </div>
+              <input class="button" type="button" id="calc9" value="Завершить" />
+              <input class="button" type="reset" value="Сброс" />
+      </form>
+      <!-- Восьмая задача -->
+      <form action="">
+          <div class="question">
+            <h2>Задача 8</h2>
+            <p>
+                Герои задачи: В качестве главного героя была выбрана Нэнси Дрю – известная на весь мир девушка–детектив из серии книг Кэролайн Кин. Кто как не она любит различные тайны, шифры и загадки. Идеальный персонаж для задач на кодирование информации.
+            </p>
+            <p>
+                Нэнси Дрю с самого детства обожала различные шифры. Поэтому со своей подругой Бесс они всегда шифровали некоторые аспекты своей жизни.
+            </p>
+            <p>
+                Например, Бесс спросила, куда они пойдут на следующей перемене. Нэнси зашифровала слово БИБЛИОТЕКА с помощью цифрового ключа. Этот ключ девочки каждый раз меняют, но обязательно указывают на обратной стороне записки. В этот раз ключ был 2574. Ключ отвечает за смещение букв по алфавиту.
+            </p>
+            <div>
+                <table>
+                    <tr>
+                        <td>Б</td>
+                        <td>И</td>
+                        <td>Б</td>
+                        <td>Л</td>
+                        <td>И</td>
+                        <td>О</td>
+                        <td>Т</td>
+                        <td>Е</td>
+                        <td>К</td>
+                        <td>А</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Г</td>
+                        <td>Н</td>
+                        <td>З</td>
+                        <td>П</td>
+                        <td>К</td>
+                        <td>У</td>
+                        <td>Щ</td>
+                        <td>И</td>
+                        <td>М</td>
+                        <td>Е</td>
+                    </tr>
+                </table>
+            </div>
+            <p>
+                То есть Бесс получила записку со словом ГНЗПКУЩИМЕ, а на обратной стороне ключ 2574, который поможет совершить обратную замену каждой буквы.
+            </p>
+            <p>
+                Приближался день рождения их общего друга Неда. Чтобы никто не узнал, что же Нэнси подарит ему на день рождения, она, конечно же, зашифровала послание для Бесс. В записке был написан набор букв СЦЁВЩНЕ и число 1352.
+            </p>
+            <p>
+                <b>
+                    Что Нэнси подарит Неду?
+                </b>
+            </p>
+            <label
+            >Впишите ответ:
+            <input type="text" name="zadaca" />
+          </label>
+          </div>
+          <div class="result">
+                <span class="title">Результат:</span>
+                <input class="" type="text" name="result" readonly />
+            </div>
+              <input class="button" type="button" id="calc10" value="Завершить" />
+              <input class="button" type="reset" value="Сброс" />
+      </form>
+    </div>
+    <!-- SCRIPT -->
+    <script>
+      calc.onclick = function() {
+        var myform = this.form;
+        if (myform.five.value == "В") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+    </script>
+    <script>
+      calc4.onclick = function() {
+        var myform = this.form;
+        if (myform.zadaca.value == 64) {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+      calc5.onclick = function() {
+        var myform = this.form;
+        if (myform.zadaca.value == "Б") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+      calc6.onclick = function() {
+        var myform = this.form;
+        if (myform.zadaca.value == "ЛАЗАНЬЯ") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+      calc7.onclick = function() {
+        var myform = this.form;
+        if (myform.zadaca.value == 5) {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+      calc8.onclick = function() {
+        var myform = this.form;
+        if (myform.zadaca.value == "Доброй ночи! Веселых выходных! Хорошего дня завтра!") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+      calc9.onclick = function() {
+        var myform = this.form;
+        if (myform.zadaca.value == "Ушла на работу, обед в холодильнике.") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+      calc10.onclick = function() {
+        var myform = this.form;
+        if (myform.zadaca.value == "Рубашка") {
+          myform.result.value = "Верно";
+        } else {
+          myform.result.value = "Неверно";
+        }
+      };
+    </script>
+  </body>
+</html>
